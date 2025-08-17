@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Signup Form</h2>
+        {% if message %}
+            <p class="error-message">{{ message }}</p>
+        {% endif %}
+        <form method="post" action="{{ url_for('signup') }}" onsubmit="return validateForm()">
+            <label>Username:</label>
+            <input type="text" name="username" id="username" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" id="password" required>
+
+            <label>Area:</label>
+            <input type="text" name="area" required>
+
+            <button type="submit">Signup</button>
+        </form>
+
+        <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (username.length < 5) {
+                alert("Username must be more than 5 characters!");
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password must be more than 6 characters!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

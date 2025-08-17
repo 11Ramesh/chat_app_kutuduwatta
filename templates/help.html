@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help - Smart Q&A App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    .header {
+      background: #2196F3;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    h2 {
+      color: #2196F3;
+      margin-bottom: 10px;
+    }
+    ul li {
+      margin: 8px 0;
+    }
+    .highlight {
+      background: #e7f3fe;
+      border-left: 6px solid #2196F3;
+      padding: 12px;
+      margin: 12px 0;
+      border-radius: 8px;
+    }
+    .contact {
+      text-align: center;
+      background: #fdfdfd;
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid #2196F3;
+    }
+    .contact a {
+      color: #2196F3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+      background: #2196F3;
+      color: white;
+      border-radius: 12px;
+    }
+    .cta a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      background: #1e88e5;
+      border-radius: 8px;
+      margin: 5px;
+      display: inline-block;
+    }
+    /* Chat bubble style for examples */
+    .chat-bubble {
+      background: #f1f0f0;
+      padding: 12px;
+      border-radius: 12px;
+      margin: 10px 0;
+      position: relative;
+    }
+    .chat-bubble.user {
+      background: #d1e7ff;
+      text-align: left;
+    }
+    .chat-bubble.ai {
+      background: #ffe0b2;
+      text-align: left;
+    }
+    .chat-bubble p {
+      margin: 4px 0;
+    }
+    /* Space between each question-answer pair */
+    .qa-pair {
+      margin-bottom: 40px; /* increased space */
+      padding: 10px;
+      background: #f9fbfe; /* subtle background to separate each Q&A */
+      border-radius: 10px;
+      border: 1px solid #d0e4fc; /* subtle border */
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      .card {
+        margin: 10px 0;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Help & Support</h1>
+    <p>Smart Q&A App – Easy Guide for Users</p>
+  </div>
+
+  <div class="container">
+    <!-- How it works -->
+    <div class="card">
+      <h2>How the App Works</h2>
+      <ul>
+        <li>Type your <strong>question</strong> into the input box.</li>
+        <li>Click the <strong>Submit</strong> button.</li>
+        <li>The app will show an <strong>instant answer</strong> below.</li>
+       
+      </ul>
+      <div class="highlight">
+        💡 <strong>Tip:</strong> Make sure you are connected to the internet for the best results.
+      </div>
+    </div>
+
+    <!-- Example Q&A -->
+    <div class="card">
+      <h2>Example Questions & Answers</h2>
+
+      <div class="qa-pair">
+    <div class="chat-bubble user">
+      <p><strong>You:</strong> What is your store name?</p>
+    </div>
+    <div class="chat-bubble ai">
+      <p><strong>AI Bot:</strong> Kuruduwatta Stores</p>
+    </div>
+  </div>
+
+      <div class="qa-pair">
+        <div class="chat-bubble user">
+          <p><strong>You:</strong> Kekulu rice price</p>
+        </div>
+        <div class="chat-bubble ai">
+          <p><strong>AI Bot:</strong> The price of Kekulu rice is Rs. 180.0 per kilogram.</p>
+        </div>
+      </div>
+
+      <div class="qa-pair">
+        <div class="chat-bubble user">
+          <p><strong>You:</strong> Compare white raw rice with other shops</p>
+        </div>
+        <div class="chat-bubble ai">
+          <p><strong>AI Bot:</strong> Based on the provided text, there are at least two different prices for 1kg packages of white raw rice:</p>
+          <ul>
+            <li><strong>Price 1:</strong> Rs. 205.00</li>
+            <li><strong>Price 2:</strong> Rs. 185.00</li>
+          </ul>
+          <p>Conclusion: Rs. 185.00 is the lower price. Further information about shops and quality is needed for a definitive recommendation.</p>
+        </div>
+      </div>
+
+      <div class="qa-pair">
+        <div class="chat-bubble user">
+          <p><strong>You:</strong> Coca Cola price in other shops</p>
+        </div>
+        <div class="chat-bubble ai">
+          <p><strong>AI Bot:</strong> Another shop: 1.5 L of Coca Cola PET is Rs. 400.00</p>
+        </div>
+      </div>
+
+      <div class="qa-pair">
+        <div class="chat-bubble user">
+          <p><strong>You:</strong> How much to spend for 1kg rice, 200g dhal, and 1L coconut oil?</p>
+        </div>
+        <div class="chat-bubble ai">
+          <p><strong>AI Bot:</strong> 1kg rice: Rs. 205.0<br>
+          200g dhal: Rs. 56.0<br>
+          1L coconut oil: Rs. 640.0<br>
+          <strong>Total: Rs. 901.0</strong></p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="card contact">
+      <h2>Need Help?</h2>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/94774953035" target="_blank">+94 77 495 3035</a></p>
+      <p><strong>Email:</strong> <a href="mailto:rameshmadhuranga02@gmail.com">yourname@example.com</a></p>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+      <h2>🚀 Want an App Like This?</h2>
+      <p>If you need a similar app for your business, contact me today!</p>
+      <p>
+        📩 <a href="mailto:rameshmadhuranga02@gmail.com">Email Me</a> |  
+        💬 <a href="https://wa.me/94774953035" target="_blank">WhatsApp Me</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
