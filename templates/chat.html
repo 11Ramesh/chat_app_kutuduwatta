@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #83aff27e;
     }
 
     .chat-container {
@@ -170,7 +170,7 @@
         aiMsgDiv.querySelector('.bubble').innerHTML = aiText;
         chat.scrollTop = chat.scrollHeight;
       } catch (err) {
-        aiMsgDiv.querySelector('.bubble').innerHTML = 'Error: Could not get response.';
+        aiMsgDiv.querySelector('.bubble').innerHTML = 'Check your network connection';
       }
     });
   </script>
