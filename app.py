@@ -9,9 +9,7 @@ except ModuleNotFoundError:
 except ImportError as e:
     print("Error importing module:", e)
 
-# from googletrans import Translator
 
-# Translator = Translator()
 
 app = Flask(__name__)
 app.secret_key = 'chatapp_ramesh_Ramesh12345@@_securekey'

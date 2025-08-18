@@ -1,16 +1,24 @@
+# Flask core
 flask
 flask_sqlalchemy
 flask_migrate
+gunicorn
+
+# Utilities
 requests
 pandas
 nest_asyncio
-playwright
+
+# LangChain ecosystem
 langchain
 langchain-google-genai
 langchain-huggingface
 langchain-community
-langchain-chroma
-duckduckgo-search
+
+
+# Search + Embeddings
 faiss-cpu
-openai
 sentence-transformers
+
+# Optional (remove if not needed)
+playwright

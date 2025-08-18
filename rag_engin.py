@@ -10,17 +10,11 @@ import re
 from playwright.async_api import async_playwright
 
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_community.tools import DuckDuckGoSearchRun
-from langchain_community.utilities import OpenWeatherMapAPIWrapper
-from langchain_community.tools.openweathermap import OpenWeatherMapQueryRun
 from langchain import hub
-from langchain.agents import create_react_agent, AgentExecutor
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.schema.output_parser import StrOutputParser
-from langchain_community.document_loaders import PyPDFLoader
 from langchain.schema import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.chains import LLMChain
