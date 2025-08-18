@@ -1,0 +1,15 @@
+flask
+flask_sqlalchemy
+flask_migrate
+requests
+pandas
+nest_asyncio
+playwright
+langchain
+langchain-google-genai
+langchain-huggingface
+langchain-community
+langchain-chroma
+duckduckgo-search
+faiss-cpu
+openai

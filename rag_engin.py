@@ -29,7 +29,7 @@ from langchain_community.vectorstores import FAISS
 
 
 # Step 1: Configure API Keys
-os.environ["GOOGLE_API_KEY"] = "AIzaSyClOTUihUVDiRZwK3MKAT067tjLd1Ccoo0"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyDjCU6IrOV6Xml84t7pJJy21v6QEPvnSb4"
 
 
 # Step 2: Setup LLM and embeddings
