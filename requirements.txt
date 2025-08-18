@@ -13,3 +13,4 @@ langchain-chroma
 duckduckgo-search
 faiss-cpu
 openai
+sentence-transformers
