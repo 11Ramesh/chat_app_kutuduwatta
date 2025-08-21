@@ -1,3 +1,4 @@
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   background: #3a95f690;
@@ -8,37 +9,47 @@ body {
   align-items: center;
 }
 
+/* Main container */
 .chat-container { 
   width: 100%; 
   max-width: 900px; 
   margin: auto; 
-  padding: 10px; 
+  padding: 0; 
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  background: linear-gradient(135deg, #1149cb3d, #1161ec4b); /* ✅ only one gradient */
+  height: 80vh;   /* Desktop height */
+  background: linear-gradient(135deg, #1149cb3d, #1161ec4b);
   border-radius: 10px;
   box-sizing: border-box;
+ background: linear-gradient(135deg, #1149cb3d, #1161ec4b);
+  overflow: hidden;  /* prevent scrollbars around header */
 }
 
 /* Chat header */
 .chat-header {
   display: flex;
+  justify-content: center;   /* center title */
   align-items: center;
-  padding: 10px;
+  padding: 12px;
+     /* light background */
+  border-bottom: 1px solid #ccc;
+  color: #000000ff;
+  /* background:  #1500ff34; */
 }
 
 .chat-header .title {
   flex: 1;
   text-align: center;
   font-size: 22px;  
-  color: #000000ff;
+  color: #000000;
+  margin: 0;
 }
 
 .chat-header a {
   text-decoration: none;
-  margin: 0 10px;
+  margin-left: auto;        /* push to right side */
   color: #1500fff4;
+  font-size: 16px;
 }
 
 .chat-header a:hover {
@@ -49,9 +60,8 @@ body {
 #chat {
   flex: 1;
   overflow-y: auto;
-  padding: 5px;
-  border: 1px solid #eeeeee00;
-  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
   background: transparent;   /* ✅ no extra background */
 }
 
@@ -96,7 +106,9 @@ body {
 /* Input bar */
 #chatForm {
   display: flex;
-  margin-top: auto;
+  padding: 10px;
+  
+  border-top: 1px solid #ccc;
 }
 
 #user_input {
@@ -128,7 +140,8 @@ body {
 
   .chat-container {
     width: 100%;
-    height: 100vh;
+    height: 100vh;       /* Full height */
+    max-height: 100dvh;  /* Fixes mobile browser bar issue */
     border-radius: 0;
   }
 
