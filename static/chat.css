@@ -169,6 +169,7 @@ body {
   #user_input {
     font-size: 14px;
     padding: 8px;
+    align-items: end;
   }
 
   #chatForm button {
