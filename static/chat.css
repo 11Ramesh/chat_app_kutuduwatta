@@ -17,14 +17,14 @@ body {
 .chat-container {
   width: 100%;
   max-width: 900px;
-  height: 80vh; /* desktop height */
+  height: 80vh; 
   display: flex;
   flex-direction: column;
   background: linear-gradient(135deg, #1149cb3d, #1161ec4b);
   border-radius: 10px;
   overflow: hidden; /* hide scrollbars outside chat area */
   box-sizing: border-box;
-   height: calc(100vh - 120px);
+   /* height: calc(100vh - 120px); */
 }
 
 /* ============================= */
