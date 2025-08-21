@@ -24,6 +24,7 @@ body {
   border-radius: 10px;
   overflow: hidden; /* hide scrollbars outside chat area */
   box-sizing: border-box;
+   height: calc(100vh - 120px);
 }
 
 /* ============================= */
@@ -110,8 +111,9 @@ body {
 #chatForm {
   display: flex;
   padding: 10px;
-  border-top: 1px solid #ccc;
+  /* border-top: 1px solid #ccc; */
   flex-shrink: 0; /* prevent shrinking */
+  justify-content: flex-end; 
   /* background: #ffffffcc; */
 }
 
@@ -140,3 +142,4 @@ body {
 /* ============================= */
 /* Responsive: Mobile */
 /* ============================= */
+
