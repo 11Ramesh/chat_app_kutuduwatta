@@ -143,3 +143,15 @@ body {
 /* Responsive: Mobile */
 /* ============================= */
 
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .chat-container {
+    width: 100%;  /* full width on mobile */
+    padding: 5px;
+  }
+
+  #chatForm {
+    padding: 8px;
+    justify-content: space-between; /* better for small screens */
+  }
+}
